@@ -1,0 +1,90 @@
+/* Copyright 2026 Kauko Sirén
+ * License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). */
+
+/* Toggle bar at top of Chatter */
+.o-chatter-navbar-toggle {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+
+    .o-chatter-toggle-btn {
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        padding: 3px 8px;
+        font-size: 12px;
+        color: #495057;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.15s ease;
+
+        &:hover {
+            background-color: #e9ecef;
+            color: #212529;
+        }
+
+        i {
+            font-size: 11px;
+        }
+
+        .o-toggle-label {
+            font-size: 11px;
+            font-weight: 500;
+        }
+    }
+}
+
+/* When sidebar chatter is collapsed */
+.o-mail-Form-chatter.o-chatter-hidden {
+    width: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    flex: 0 0 42px !important;
+    overflow: hidden !important;
+    border-left: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+
+    .o-chatter-navbar-toggle {
+        padding: 10px 0;
+        justify-content: center;
+        background: transparent;
+        border-bottom: none;
+
+        .o-chatter-toggle-btn {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            padding: 8px 4px;
+            gap: 6px;
+            border: 1px solid #adb5bd;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+            i {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+/* Fullscreen expansion of form view when chatter is collapsed */
+body.o-chatter-fullscreen,
+.o_form_view_container.o-chatter-fullscreen,
+.o_content.o-chatter-fullscreen,
+.o-chatter-fullscreen {
+    .o_form_sheet_bg {
+        width: calc(100% - 42px) !important;
+        max-width: calc(100% - 42px) !important;
+        flex: 1 1 calc(100% - 42px) !important;
+    }
+
+    .o_form_sheet {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+}

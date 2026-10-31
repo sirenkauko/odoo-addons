@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="chatter_toggle.ChatterToggle" t-inherit="mail.Chatter" t-inherit-mode="extension">
+        <!-- Toggle button bar at top of Chatter -->
+        <xpath expr="//div[hasclass('o-mail-Chatter-top')]" position="before">
+            <div class="o-chatter-navbar-toggle" 
+                 t-att-class="{
+                     'o_collapsed': !this.isChatterVisible,
+                     'o_expanded': this.isChatterVisible
+                 }">
+                <button type="button" 
+                        class="o-chatter-toggle-btn"
+                        t-on-click="() => this.toggleChatterVisibility()"
+                        t-att-title="this.toggleButtonTitle">
+                    <i t-att-class="{
+                           'fa fa-chevron-right': this.isChatterVisible,
+                           'fa fa-chevron-left': !this.isChatterVisible
+                       }"/>
+                    <span class="o-toggle-label" t-esc="this.toggleButtonLabel"/>
+                </button>
+            </div>
+        </xpath>
+
+        <!-- Hide top actions when collapsed -->
+        <xpath expr="//div[hasclass('o-mail-Chatter-top')]" position="attributes">
+            <attribute name="t-att-class">{
+                'd-none': !this.isChatterVisible
+            }</attribute>
+        </xpath>
+
+        <!-- Hide chatter content/messages when collapsed -->
+        <xpath expr="//div[hasclass('o-mail-Chatter-content')]" position="attributes">
+            <attribute name="t-att-class">{
+                'd-none': !this.isChatterVisible
+            }</attribute>
+        </xpath>
+    </t>
+</templates>
