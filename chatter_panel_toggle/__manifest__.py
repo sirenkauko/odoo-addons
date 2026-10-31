@@ -20,6 +20,9 @@ Supports English and Finnish translations.
     'license': 'LGPL-3',
     'depends': ['web', 'mail'],
     'data': [],
+    'images': [
+        'static/description/banner.png',
+    ],
     'assets': {
         'web.assets_backend': [
             'chatter_panel_toggle/static/src/components/chatter_toggle/chatter_toggle.js',
