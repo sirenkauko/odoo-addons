@@ -11,7 +11,7 @@ A clean, responsive toggle button to show or hide the chatter sidebar in Odoo 20
 Clone or copy into your Odoo addons path and install:
 
 ```bash
-./odoo-bin -i chatter_toggle -d <database> -c <config>
+./odoo-bin -i chatter_panel_toggle -d <database> -c <config>
 ```
 
 ## Author

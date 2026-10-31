@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates xml:space="preserve">
-    <t t-name="chatter_toggle.ChatterToggle" t-inherit="mail.Chatter" t-inherit-mode="extension">
+    <t t-name="chatter_panel_toggle.ChatterToggle" t-inherit="mail.Chatter" t-inherit-mode="extension">
         <!-- Toggle button bar at top of Chatter -->
         <xpath expr="//div[hasclass('o-mail-Chatter-top')]" position="before">
             <div class="o-chatter-navbar-toggle" 

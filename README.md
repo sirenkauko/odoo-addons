@@ -6,7 +6,7 @@ A collection of community modules and productivity enhancements for Odoo by Kauk
 
 | Module | Version | Description |
 | :--- | :--- | :--- |
-| **[chatter_toggle](chatter_toggle/)** | 20.0 | Toggle button to show or hide the chatter panel in form views, expanding form sheets to 100% width. |
+| **[chatter_panel_toggle](chatter_panel_toggle/)** | 20.0 | Toggle button to show or hide the chatter panel in form views, expanding form sheets to 100% width. |
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* chatter_toggle
+# 	* chatter_panel_toggle
 #
 msgid ""
 msgstr ""
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. module: chatter_toggle
-#: code:addons/chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.js:0
+#. module: chatter_panel_toggle
+#: code:addons/chatter_panel_toggle/static/src/components/chatter_panel_toggle/chatter_panel_toggle.js:0
 msgid "Hide Chatter"
 msgstr "Piilota Chatter"
 
-#. module: chatter_toggle
-#: code:addons/chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.js:0
+#. module: chatter_panel_toggle
+#: code:addons/chatter_panel_toggle/static/src/components/chatter_panel_toggle/chatter_panel_toggle.js:0
 msgid "Show Chatter"
 msgstr "Näytä Chatter"
 
-#. module: chatter_toggle
-#: code:addons/chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.js:0
+#. module: chatter_panel_toggle
+#: code:addons/chatter_panel_toggle/static/src/components/chatter_panel_toggle/chatter_panel_toggle.js:0
 msgid "Hide"
 msgstr "Piilota"
 
-#. module: chatter_toggle
-#: code:addons/chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.js:0
+#. module: chatter_panel_toggle
+#: code:addons/chatter_panel_toggle/static/src/components/chatter_panel_toggle/chatter_panel_toggle.js:0
 msgid "Chatter"
 msgstr "Chatter"

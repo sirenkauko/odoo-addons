@@ -22,9 +22,9 @@ Supports English and Finnish translations.
     'data': [],
     'assets': {
         'web.assets_backend': [
-            'chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.js',
-            'chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.xml',
-            'chatter_toggle/static/src/components/chatter_toggle/chatter_toggle.scss',
+            'chatter_panel_toggle/static/src/components/chatter_toggle/chatter_toggle.js',
+            'chatter_panel_toggle/static/src/components/chatter_toggle/chatter_toggle.xml',
+            'chatter_panel_toggle/static/src/components/chatter_toggle/chatter_toggle.scss',
         ],
     },
     'installable': True,
