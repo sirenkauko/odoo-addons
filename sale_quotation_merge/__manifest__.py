@@ -3,7 +3,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 {
     'name': 'Sale Quotation Merge (Odoo 20)',
-    'version': '20.0.1.0.0',
+    'version': '20.0.1.0.1',
     'category': 'Sales/Sales',
     'summary': 'Merge multiple draft sales quotations into a single consolidated quotation',
     'description': """
@@ -26,7 +26,7 @@ Features:
     'license': 'LGPL-3',
     'depends': ['sale'],
     'data': [
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'wizard/sale_quotation_merge_views.xml',
     ],
     'images': [
