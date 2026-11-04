@@ -7,6 +7,7 @@ A collection of community modules and productivity enhancements for Odoo by Kauk
 | Module | Version | Description |
 | :--- | :--- | :--- |
 | **[chatter_panel_toggle](chatter_panel_toggle/)** | 20.0 | Toggle button to show or hide the chatter panel in form views, expanding form sheets to 100% width. |
+| **[sale_quotation_merge](sale_quotation_merge/)** | 20.0 | Merge multiple draft sales quotations into a single consolidated quotation directly from list action. |
 
 ## Installation
 
