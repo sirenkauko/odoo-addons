@@ -4,10 +4,10 @@
         <field name="name">sale.quotation.merge.form</field>
         <field name="model">sale.quotation.merge</field>
         <field name="arch" type="xml">
-            <form string="Yhdistä tarjoukset">
+            <form string="Merge Quotations">
                 <sheet>
                     <p class="text-muted">
-                        Valitut tarjoukset yhdistetään valittuun kohdetarjoukseen. Kaikki rivit siirtyvät kohdetarjoukselle.
+                        The selected quotations will be merged into the target quotation. All lines will be transferred.
                     </p>
                     <group>
                         <group>
@@ -20,7 +20,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="Valitut tarjoukset" name="orders">
+                        <page string="Selected Quotations" name="orders">
                             <field name="order_ids" readonly="1">
                                 <list>
                                     <field name="name"/>
@@ -34,15 +34,15 @@
                     </notebook>
                 </sheet>
                 <footer>
-                    <button name="action_merge" string="Yhdistä tarjoukset" type="object" class="btn-primary" data-hotkey="q"/>
-                    <button string="Peruuta" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                    <button name="action_merge" string="Merge Quotations" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
                 </footer>
             </form>
         </field>
     </record>
 
     <record id="action_sale_quotation_merge" model="ir.actions.act_window">
-        <field name="name">Yhdistä tarjoukset</field>
+        <field name="name">Merge Quotations</field>
         <field name="res_model">sale.quotation.merge</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="view_sale_quotation_merge_form"/>

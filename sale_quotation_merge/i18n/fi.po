@@ -1,0 +1,143 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_quotation_merge
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 20.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-04 21:00+0000\n"
+"PO-Revision-Date: 2026-11-04 21:00+0000\n"
+"Last-Translator: Kauko Sirén\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_quotation_merge
+#: model:ir.model,name:sale_quotation_merge.model_sale_quotation_merge
+#: model:ir.actions.act_window,name:sale_quotation_merge.action_sale_quotation_merge
+#: model_terms:ir.ui.view,arch_db:sale_quotation_merge.view_sale_quotation_merge_form
+msgid "Merge Quotations"
+msgstr "Yhdistä tarjoukset"
+
+#. module: sale_quotation_merge
+#: model_terms:ir.ui.view,arch_db:sale_quotation_merge.view_sale_quotation_merge_form
+msgid "The selected quotations will be merged into the target quotation. All lines will be transferred."
+msgstr "Valitut tarjoukset yhdistetään valittuun kohdetarjoukseen. Kaikki rivit siirtyvät kohdetarjoukselle."
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,field_description:sale_quotation_merge.field_sale_quotation_merge__target_order_id
+msgid "Target Quotation"
+msgstr "Kohdetarjous"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,help:sale_quotation_merge.field_sale_quotation_merge__target_order_id
+msgid "Quotation into which lines from other quotations will be merged."
+msgstr "Tarjous, johon muiden tarjousten rivit yhdistetään."
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,field_description:sale_quotation_merge.field_sale_quotation_merge__merge_lines
+msgid "Consolidate Identical Lines"
+msgstr "Yhdistä samat tuoterivit"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,help:sale_quotation_merge.field_sale_quotation_merge__merge_lines
+msgid "Combine quantities for lines sharing the same product, unit price, discount, and taxes."
+msgstr "Laskee määrät yhteen riveille, joilla on sama tuote, yksikköhinta, alennus ja verot."
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,field_description:sale_quotation_merge.field_sale_quotation_merge__keep_notes
+msgid "Keep Terms and Notes"
+msgstr "Kopioi myös ehdot ja muistiinpanot"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,help:sale_quotation_merge.field_sale_quotation_merge__keep_notes
+msgid "Append terms and notes from source quotations to the target quotation."
+msgstr "Liittää lähdetarjousten ehdot ja muistiinpanot kohdetarjouksen lisätietoihin."
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,field_description:sale_quotation_merge.field_sale_quotation_merge__action_source_orders
+msgid "Source Quotations Action"
+msgstr "Lähdetarjousten käsittely"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields.selection,name:sale_quotation_merge.selection__sale_quotation_merge__action_source_orders__cancel
+msgid "Cancel source quotations (Recommended)"
+msgstr "Peruuta lähdetarjoukset (Suositeltu)"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields.selection,name:sale_quotation_merge.selection__sale_quotation_merge__action_source_orders__archive
+msgid "Archive source quotations"
+msgstr "Arkistoi lähdetarjoukset"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields.selection,name:sale_quotation_merge.selection__sale_quotation_merge__action_source_orders__none
+msgid "Do not modify source quotations"
+msgstr "Älä muuta lähdetarjouksia"
+
+#. module: sale_quotation_merge
+#: model:ir.model.fields,field_description:sale_quotation_merge.field_sale_quotation_merge__order_ids
+#: model_terms:ir.ui.view,arch_db:sale_quotation_merge.view_sale_quotation_merge_form
+msgid "Selected Quotations"
+msgstr "Valitut tarjoukset"
+
+#. module: sale_quotation_merge
+#: model_terms:ir.ui.view,arch_db:sale_quotation_merge.view_sale_quotation_merge_form
+msgid "Quotations to Merge"
+msgstr "Yhdistettävät tarjoukset"
+
+#. module: sale_quotation_merge
+#: model_terms:ir.ui.view,arch_db:sale_quotation_merge.view_sale_quotation_merge_form
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "Please select at least two quotations to merge."
+msgstr "Valitse vähintään kaksi tarjousta yhdistettäväksi."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "Only quotations in draft or sent state can be merged. The following orders are not in draft: %s."
+msgstr "Vain luonnostilassa (Tarjous / Tarjous lähetetty) olevia tarjouksia voi yhdistää. Seuraavat tilaukset eivät ole luonnostilassa: %s."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "All selected quotations must belong to the same customer."
+msgstr "Kaikkien yhdistettävien tarjousten täytyy kuulua samalle asiakkaalle."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "All selected quotations must belong to the same company."
+msgstr "Kaikkien yhdistettävien tarjousten täytyy kuulua samalle yritykselle."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "All selected quotations must have the same currency."
+msgstr "Kaikkien yhdistettävien tarjousten valuutan täytyy olla sama."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "No source quotations to merge."
+msgstr "Ei lähdetarjouksia yhdistettäväksi."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "Quotation merged into <a href='#' data-oe-model='sale.order' data-oe-id='%(target_id)s'>%(target_name)s</a>."
+msgstr "Tarjous yhdistetty tarjoukseen <a href='#' data-oe-model='sale.order' data-oe-id='%(target_id)s'>%(target_name)s</a>."
+
+#. module: sale_quotation_merge
+#: code:addons/sale_quotation_merge/wizard/sale_quotation_merge.py:0
+#, python-format
+msgid "The following quotations were merged into this quotation: %(source_links)s."
+msgstr "Tähän tarjoukseen yhdistettiin seuraavat tarjoukset: %(source_links)s."
